@@ -47,7 +47,7 @@ class ScapeGoatTree<Key extends Comparable<Key>,Data> implements Tree<Key, Data>
         }
     }
     /* Functions to search for an element */
-    public boolean find(Key val)
+    public boolean get(Key val)
     {
         return search(root, val);
     }
@@ -124,7 +124,7 @@ class ScapeGoatTree<Key extends Comparable<Key>,Data> implements Tree<Key, Data>
         return (int)Math.ceil(log23*Math.log(q));
     }
     /* Function to insert an element */
-    public void insert(Key x,Data data_)
+    public void put(Key x,Data data_)
     {
         if (root == null) {
             root = new SGTNode<Key,Data>(x, data_);

@@ -28,7 +28,7 @@ public class RemoveTesterLinearString<Key,TreeType extends Tree<String, Integer>
             }
             s = sb.toString();
             list.add((Key) String.valueOf(s));
-            getTree().insert(s,i);
+            getTree().put(s,i);
         }
     }
 

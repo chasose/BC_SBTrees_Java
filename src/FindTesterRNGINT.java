@@ -12,7 +12,7 @@ public class FindTesterRNGINT<Key,TreeType extends Tree<Integer, Integer>> exten
     public void prepare(List<Key> list) {
         for (int i = 0; i < getStepSize() * getCurrentStep(); i++) {
             list.add((Key) Integer.valueOf(i));
-            getTree().insert(i, i);
+            getTree().put(i, i);
         }
         Collections.shuffle(list);
     }
@@ -20,7 +20,7 @@ public class FindTesterRNGINT<Key,TreeType extends Tree<Integer, Integer>> exten
     @Override
     public TreeType execute(List<Key> list) {
         for (Key key : list) {
-            getTree().find((Integer) key);
+            getTree().get((Integer) key);
         }
         return getTree();
     }

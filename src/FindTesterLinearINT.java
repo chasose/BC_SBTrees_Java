@@ -11,14 +11,14 @@ public class FindTesterLinearINT<Key,TreeType extends Tree<Integer, Integer>> ex
     public void prepare(List<Key> list) {
         for (int i = 0; i < getStepSize() * getCurrentStep(); i++) {
             list.add((Key) Integer.valueOf(i));
-            getTree().insert(i,i);
+            getTree().put(i,i);
         }
     }
 
     @Override
     public TreeType execute(List<Key> list) {
         for (Key key : list) {
-            getTree().find((Integer) key);
+            getTree().get((Integer) key);
         }
         return getTree();
     }

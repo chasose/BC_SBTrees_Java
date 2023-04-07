@@ -29,7 +29,7 @@ public class RemoveTesterRNGString<Key,TreeType extends Tree<String, Integer>> e
             }
             s = sb.toString();
             list.add((Key) String.valueOf(s));
-            getTree().insert(s,i);
+            getTree().put(s,i);
         }
         Collections.shuffle(list);
     }

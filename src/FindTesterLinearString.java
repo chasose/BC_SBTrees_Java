@@ -28,14 +28,14 @@ public class FindTesterLinearString<Key,TreeType extends Tree<String, Integer>> 
             }
             s = sb.toString();
             list.add((Key) String.valueOf(s));
-            getTree().insert(s,i);
+            getTree().put(s,i);
         }
     }
 
     @Override
     public TreeType execute(List<Key> list) {
         for (Key key : list) {
-            getTree().find((String) key);
+            getTree().get((String) key);
         }
         return getTree();
     }

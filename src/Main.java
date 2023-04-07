@@ -1,3 +1,4 @@
+import java.util.*;
 public class Main {
     public static void main(String[] args) {
         //avl
@@ -42,7 +43,7 @@ public class Main {
 
 
         //sg
-        ScapeGoatTree<Integer,Integer> sg_tree_ = new ScapeGoatTree<>();
+        //ScapeGoatTree<Integer,Integer> sg_tree_ = new ScapeGoatTree<>();
         /*InsertTesterLinearINT<Integer,ScapeGoatTree<Integer,Integer>> testerLinearINT_sg = new InsertTesterLinearINT<>(sg_tree_,10, 100, 750, "Linear/sg_tree/I-L-SG-INT.csv");
         testerLinearINT_sg.analyze();
 
@@ -61,7 +62,7 @@ public class Main {
         /*RemoveTesterRNGINT<Integer,ScapeGoatTree<Integer,Integer>> testerRNGINT_ScapeGoatTreeR = new RemoveTesterRNGINT<>(sg_tree_,50, 100, 750, "RNG/sg_tree/R-R-SG-INT.csv");
         testerRNGINT_ScapeGoatTreeR.analyze();*/
 
-        ScapeGoatTree<String,Integer> sg_tree_s = new ScapeGoatTree<>();
+        //ScapeGoatTree<String,Integer> sg_tree_s = new ScapeGoatTree<>();
         /*InsertTesterLinearString<String,ScapeGoatTree<String,Integer>> testerLinearString_sg = new InsertTesterLinearString<>(sg_tree_s,50, 100, 750, "RNG/sg_tree/I-L-SG-String.csv");
         testerLinearString_sg.analyze();
 
@@ -82,14 +83,14 @@ public class Main {
 
         //splay
 
-        splay_tree<Integer,Integer> splay_tree = new splay_tree<>();
+        //splay_tree<Integer,Integer> splay_tree = new splay_tree<>();
         /*InsertTesterLinearINT<Integer,splay_tree<Integer,Integer>> testerLinearINT_splay = new InsertTesterLinearINT<>(splay_tree,50, 100, 750, "Linear/splay_tree/I-L-SPLAY-INT.csv");
         testerLinearINT_splay.analyze();
 
         InsertTesterRNGINT<Integer,splay_tree<Integer,Integer>> testerRNGINT_splay = new InsertTesterRNGINT<>(splay_tree,50, 100, 750, "Linear/splay_tree/I-R-SPLAY-INT.csv");
         testerRNGINT_splay.analyze();*/
 
-        FindTesterLinearINT<Integer,splay_tree<Integer,Integer>> testerLinearINT_splay_treeF = new FindTesterLinearINT<>(splay_tree,50, 100, 750, "Linear/splay_tree/F-L-SPLAY-INT.csv");
+        /*FindTesterLinearINT<Integer,splay_tree<Integer,Integer>> testerLinearINT_splay_treeF = new FindTesterLinearINT<>(splay_tree,50, 100, 750, "Linear/splay_tree/F-L-SPLAY-INT.csv");
         testerLinearINT_splay_treeF.analyze();
 
         FindTesterRNGINT<Integer,splay_tree<Integer,Integer>> testerRNGINT_splay_treeF = new FindTesterRNGINT<>(splay_tree,50, 100, 750, "RNG/splay_tree/F-R-AVL-SPLAY.csv");
@@ -102,11 +103,11 @@ public class Main {
         testerRNGINT_splay_treeR.analyze();
 
         splay_tree<String,Integer> splay_trees = new splay_tree<>();
-        /*InsertTesterLinearString<String,splay_tree<String,Integer>> testerLinearString_splay = new InsertTesterLinearString<>(splay_trees,50, 100, 750, "RNG/splay_tree/I-L-SPLAY-String.csv");
+        *//*InsertTesterLinearString<String,splay_tree<String,Integer>> testerLinearString_splay = new InsertTesterLinearString<>(splay_trees,50, 100, 750, "RNG/splay_tree/I-L-SPLAY-String.csv");
         testerLinearString_splay.analyze();
 
         InsertTesterRNGString<String,splay_tree<String,Integer>> testerRNGString_splay = new InsertTesterRNGString<>(splay_trees,50, 100, 750, "RNG/splay_tree/I-R-SPLAY-String.csv");
-        testerRNGString_splay.analyze();*/
+        testerRNGString_splay.analyze();*//*
 
         FindTesterLinearString<String,splay_tree<String,Integer>> testerLinearString_splay_treeF = new FindTesterLinearString<>(splay_trees,50, 100, 750, "Linear/splay_tree/F-L-SPLAY-String.csv");
         testerLinearString_splay_treeF.analyze();
@@ -118,6 +119,46 @@ public class Main {
         testerLinearString_splay_treeR.analyze();
 
         RemoveTesterRNGString<String,splay_tree<String,Integer>> testerRNGString_splay_treeR = new RemoveTesterRNGString<>(splay_trees,50, 100, 750, "RNG/splay_tree/R-R-SPLAY-String.csv");
+        testerRNGString_splay_treeR.analyze();*/
+
+        //TreeMap
+
+        treeMap<Integer,Integer> map_tree = new treeMap<>();
+        InsertTesterLinearINT<Integer,treeMap<Integer,Integer>> testerLinearINT_splay = new InsertTesterLinearINT<>(map_tree,50, 100, 750, "Linear/MAP/I-L-MAP-INT.csv");
+        testerLinearINT_splay.analyze();
+
+        InsertTesterRNGINT<Integer,treeMap<Integer,Integer>> testerRNGINT_splay = new InsertTesterRNGINT<>(map_tree,50, 100, 750, "RNG/MAP/I-R-MAP-INT.csv");
+        testerRNGINT_splay.analyze();
+
+        FindTesterLinearINT<Integer,treeMap<Integer,Integer>> testerLinearINT_splay_treeF = new FindTesterLinearINT<>(map_tree,50, 100, 750, "Linear/MAP/F-L-MAP-INT.csv");
+        testerLinearINT_splay_treeF.analyze();
+
+        FindTesterRNGINT<Integer,treeMap<Integer,Integer>> testerRNGINT_splay_treeF = new FindTesterRNGINT<>(map_tree,50, 100, 750, "RNG/MAP/F-R-AVL-MAP.csv");
+        testerRNGINT_splay_treeF.analyze();
+
+        RemoveTesterLinearINT<Integer,treeMap<Integer,Integer>> testerLinearINT_splay_treeR = new RemoveTesterLinearINT<>(map_tree,50, 100, 750, "Linear/MAP/R-L-MAP-INT.csv");
+        testerLinearINT_splay_treeR.analyze();
+
+        RemoveTesterRNGINT<Integer,treeMap<Integer,Integer>> testerRNGINT_splay_treeR = new RemoveTesterRNGINT<>(map_tree,50, 100, 750, "RNG/MAP/R-R-MAP-INT.csv");
+        testerRNGINT_splay_treeR.analyze();
+
+        treeMap<String,Integer> map_treeS = new treeMap<>();
+        InsertTesterLinearString<String,treeMap<String,Integer>> testerLinearString_splay = new InsertTesterLinearString<>(map_treeS,50, 100, 750, "Linear/MAP/I-L-MAP-String.csv");
+        testerLinearString_splay.analyze();
+
+        InsertTesterRNGString<String,treeMap<String,Integer>> testerRNGString_splay = new InsertTesterRNGString<>(map_treeS,50, 100, 750, "RNG/MAP/I-R-MAP-String.csv");
+        testerRNGString_splay.analyze();
+
+        FindTesterLinearString<String,treeMap<String,Integer>> testerLinearString_splay_treeF = new FindTesterLinearString<>(map_treeS,50, 100, 750, "Linear/MAP/F-L-MAP-String.csv");
+        testerLinearString_splay_treeF.analyze();
+
+        FindTesterRNGString<String,treeMap<String,Integer>> testerRNGString_splay_treeF = new FindTesterRNGString<>(map_treeS,50, 100, 750, "RNG/MAP/F-R-MAP-String.csv");
+        testerRNGString_splay_treeF.analyze();
+
+        RemoveTesterLinearString<String,treeMap<String,Integer>> testerLinearString_splay_treeR = new RemoveTesterLinearString<>(map_treeS,50, 100, 750, "Linear/MAP/R-L-MAP-String.csv");
+        testerLinearString_splay_treeR.analyze();
+
+        RemoveTesterRNGString<String,treeMap<String,Integer>> testerRNGString_splay_treeR = new RemoveTesterRNGString<>(map_treeS,50, 100, 750, "RNG/MAP/R-R-MAP-String.csv");
         testerRNGString_splay_treeR.analyze();
     }
 }

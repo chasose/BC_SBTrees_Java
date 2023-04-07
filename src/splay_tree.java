@@ -18,7 +18,7 @@ public class splay_tree<Key extends Comparable<Key>, Data> implements Tree<Key,D
         root = null;
     }
 
-    public boolean find(Key key) {
+    public boolean get(Key key) {
         return contains(key) != null;
     }
 
@@ -34,7 +34,7 @@ public class splay_tree<Key extends Comparable<Key>, Data> implements Tree<Key,D
     /***************************************************************************
      *  Splay tree insertion.
      ***************************************************************************/
-    public void insert(Key key, Data value) {
+    public void put(Key key, Data value) {
         // splay key to root
         if (root == null) {
             root = new Node(key, value);

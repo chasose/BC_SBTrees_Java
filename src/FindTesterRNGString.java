@@ -29,7 +29,7 @@ public class FindTesterRNGString<Key,TreeType extends Tree<String, Integer>> ext
             }
             s = sb.toString();
             list.add((Key) String.valueOf(s));
-            getTree().insert(s,i);
+            getTree().put(s,i);
         }
         Collections.shuffle(list);
     }
@@ -37,7 +37,7 @@ public class FindTesterRNGString<Key,TreeType extends Tree<String, Integer>> ext
     @Override
     public TreeType execute(List<Key> list) {
         for (Key key : list) {
-            getTree().find((String) key);
+            getTree().get((String) key);
         }
         return getTree();
     }

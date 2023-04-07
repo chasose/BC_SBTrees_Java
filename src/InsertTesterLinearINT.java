@@ -17,7 +17,7 @@ public class InsertTesterLinearINT<Key,TreeType extends Tree<Integer, Integer>> 
     @Override
     public TreeType execute(List<Key> list) {
         for (int i = 0; i < list.size(); i++) {
-            getTree().insert((Integer)list.get(i), i);
+            getTree().put((Integer)list.get(i), i);
         }
         return getTree();
     }

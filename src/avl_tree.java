@@ -54,7 +54,7 @@ public class avl_tree<Key extends Comparable<Key>,Data> implements Tree<Key, Dat
     }
 
     // create insertElement() to insert element to to the AVL Tree  
-    public void insert(Key element, Data data)
+    public void put(Key element, Data data)
     {
         rootNode = insertElement(element,data, rootNode);
     }
@@ -221,7 +221,7 @@ public class avl_tree<Key extends Comparable<Key>,Data> implements Tree<Key, Dat
     }
 
     //create searchElement() method to find an element in the AVL Tree  
-    public boolean find(Key element)
+    public boolean get(Key element)
     {
         return searchElement(rootNode, element);
     }

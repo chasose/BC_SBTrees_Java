@@ -34,7 +34,7 @@ public class InsertTesterLinearString<Key,TreeType extends Tree<String, Integer>
     @Override
     public TreeType execute(List<Key> list) {
         for (int i = 0; i < list.size(); i++) {
-            getTree().insert((String)list.get(i), i);
+            getTree().put((String)list.get(i), i);
         }
         return getTree();
     }

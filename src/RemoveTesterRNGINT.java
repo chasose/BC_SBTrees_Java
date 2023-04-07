@@ -12,7 +12,7 @@ public class RemoveTesterRNGINT<Key,TreeType extends Tree<Integer, Integer>> ext
     public void prepare(List<Key> list) {
         for (int i = 0; i < getStepSize() * getCurrentStep(); i++) {
             list.add((Key) Integer.valueOf(i));
-            getTree().insert(i,i);
+            getTree().put(i,i);
         }
         Collections.shuffle(list);
     }

@@ -1,44 +1,43 @@
-import java.util.*;
 public class Main {
     public static void main(String[] args) {
         //avl
-        /*avl_tree<Integer,Integer> avl_tree = new avl_tree<>();*/
-        /*InsertTesterLinearINT<Integer,avl_tree<Integer,Integer>> testerLinearINT_avl = new InsertTesterLinearINT<>(avl_tree,50, 100, 750, "Linear/avl_tree/I-L-AVL-INT.csv");
+        avl_tree<Integer,Integer> avl_tree = new avl_tree<>();
+        InsertTesterLinearINT<Integer,avl_tree<Integer,Integer>> testerLinearINT_avl = new InsertTesterLinearINT<>(avl_tree,50, 100, 750, "Linear/AVL_MAP/I-L-AVL-INT.csv");
         testerLinearINT_avl.analyze();
 
-        InsertTesterRNGINT<Integer,avl_tree<Integer,Integer>> testerRNGINT_avl = new InsertTesterRNGINT<>(avl_tree,50, 100, 750, "RNG/avl_tree/I-R-AVL-INT.csv");
-        testerRNGINT_avl.analyze();*/
+        InsertTesterRNGINT<Integer,avl_tree<Integer,Integer>> testerRNGINT_avl = new InsertTesterRNGINT<>(avl_tree,50, 100, 750, "RNG/AVL_MAP/I-R-AVL-INT.csv");
+        testerRNGINT_avl.analyze();
 
-        /*FindTesterLinearINT<Integer,avl_tree<Integer,Integer>> testerLinearINT_avlF = new FindTesterLinearINT<>(avl_tree,50, 100, 750, "Linear/avl_tree/F-L-AVL-INT.csv");
+        FindTesterLinearINT<Integer,avl_tree<Integer,Integer>> testerLinearINT_avlF = new FindTesterLinearINT<>(avl_tree,50, 100, 750, "Linear/AVL_MAP/F-L-AVL-INT.csv");
         testerLinearINT_avlF.analyze();
 
-        FindTesterRNGINT<Integer,avl_tree<Integer,Integer>> testerRNGINT_avlF = new FindTesterRNGINT<>(avl_tree,50, 100, 750, "RNG/avl_tree/F-R-AVL-INT.csv");
+        FindTesterRNGINT<Integer,avl_tree<Integer,Integer>> testerRNGINT_avlF = new FindTesterRNGINT<>(avl_tree,50, 100, 750, "RNG/AVL_MAP/F-R-AVL-INT.csv");
         testerRNGINT_avlF.analyze();
 
-        RemoveTesterLinearINT<Integer,avl_tree<Integer,Integer>> testerLinearINT_avlR = new RemoveTesterLinearINT<>(avl_tree,50, 100, 750, "Linear/avl_tree/R-L-AVL-INT.csv");
+        RemoveTesterLinearINT<Integer,avl_tree<Integer,Integer>> testerLinearINT_avlR = new RemoveTesterLinearINT<>(avl_tree,50, 100, 750, "Linear/AVL_MAP/R-L-AVL-INT.csv");
         testerLinearINT_avlR.analyze();
 
-        RemoveTesterRNGINT<Integer,avl_tree<Integer,Integer>> testerRNGINT_avlR = new RemoveTesterRNGINT<>(avl_tree,50, 100, 750, "RNG/avl_tree/R-R-AVL-INT.csv");
+        RemoveTesterRNGINT<Integer,avl_tree<Integer,Integer>> testerRNGINT_avlR = new RemoveTesterRNGINT<>(avl_tree,50, 100, 750, "RNG/AVL_MAP/R-R-AVL-INT.csv");
         testerRNGINT_avlR.analyze();
 
-        avl_tree<String,Integer> avl_trees = new avl_tree<>();*/
-        /*InsertTesterLinearString<String,avl_tree<String,Integer>> testerLinearString_avl = new InsertTesterLinearString<>(avl_trees,50, 100, 750, "RNG/avl_tree/I-L-AVL-String.csv");
+        avl_tree<String,Integer> avl_trees = new avl_tree<>();
+        InsertTesterLinearString<String,avl_tree<String,Integer>> testerLinearString_avl = new InsertTesterLinearString<>(avl_trees,50, 100, 750, "RNG/AVL_MAP/I-L-AVL-String.csv");
         testerLinearString_avl.analyze();
 
-        InsertTesterRNGString<String,avl_tree<String,Integer>> testerRNGString_avl = new InsertTesterRNGString<>(avl_trees,50, 100, 750, "RNG/avl_tree/I-R-AVL-String.csv");
-        testerRNGString_avl.analyze();*/
+        InsertTesterRNGString<String,avl_tree<String,Integer>> testerRNGString_avl = new InsertTesterRNGString<>(avl_trees,50, 100, 750, "RNG/AVL_MAP/I-R-AVL-String.csv");
+        testerRNGString_avl.analyze();
 
-        /*FindTesterLinearString<String,avl_tree<String,Integer>> testerLinearString_avlF = new FindTesterLinearString<>(avl_trees,50, 100, 750, "Linear/avl_tree/F-L-AVL-String.csv");
+        FindTesterLinearString<String,avl_tree<String,Integer>> testerLinearString_avlF = new FindTesterLinearString<>(avl_trees,50, 100, 750, "Linear/AVL_MAP/F-L-AVL-String.csv");
         testerLinearString_avlF.analyze();
 
-        FindTesterRNGString<String,avl_tree<String,Integer>> testerRNGString_avlF = new FindTesterRNGString<>(avl_trees,50, 100, 750, "RNG/avl_tree/F-R-AVL-String.csv");
+        FindTesterRNGString<String,avl_tree<String,Integer>> testerRNGString_avlF = new FindTesterRNGString<>(avl_trees,50, 100, 750, "RNG/AVL_MAP/F-R-AVL-String.csv");
         testerRNGString_avlF.analyze();
 
-        RemoveTesterLinearString<String,avl_tree<String,Integer>> testerLinearString_avlR = new RemoveTesterLinearString<>(avl_trees,50, 100, 750, "Linear/avl_tree/R-L-AVL-String.csv");
+        RemoveTesterLinearString<String,avl_tree<String,Integer>> testerLinearString_avlR = new RemoveTesterLinearString<>(avl_trees,50, 100, 750, "Linear/AVL_MAP/R-L-AVL-String.csv");
         testerLinearString_avlR.analyze();
 
-        RemoveTesterRNGString<String,avl_tree<String,Integer>> testerRNGString_avlR = new RemoveTesterRNGString<>(avl_trees,50, 100, 750, "RNG/avl_tree/R-R-AVL-String.csv");
-        testerRNGString_avlR.analyze();*/
+        RemoveTesterRNGString<String,avl_tree<String,Integer>> testerRNGString_avlR = new RemoveTesterRNGString<>(avl_trees,50, 100, 750, "RNG/AVL_MAP/R-R-AVL-String.csv");
+        testerRNGString_avlR.analyze();
 
 
 
@@ -85,11 +84,16 @@ public class Main {
 
         //splay_tree<Integer,Integer> splay_tree = new splay_tree<>();
         /*InsertTesterLinearINT<Integer,splay_tree<Integer,Integer>> testerLinearINT_splay = new InsertTesterLinearINT<>(splay_tree,50, 100, 750, "Linear/splay_tree/I-L-SPLAY-INT.csv");
-        testerLinearINT_splay.analyze();
+        testerLinearINT_splay.analyze();*/
 
-        InsertTesterRNGINT<Integer,splay_tree<Integer,Integer>> testerRNGINT_splay = new InsertTesterRNGINT<>(splay_tree,50, 100, 750, "Linear/splay_tree/I-R-SPLAY-INT.csv");
+        /*InsertTesterRNGINT<Integer,splay_tree<Integer,Integer>> testerRNGINT_splay = new InsertTesterRNGINT<>(splay_tree,50, 100, 75, "Linear/splay_treeNEW/I-R-SPLAY-INT.csv");
         testerRNGINT_splay.analyze();*/
 
+        /*FindTesterRNGINT<Integer,splay_tree<Integer,Integer>> testerRNGINT_splay_treeF = new FindTesterRNGINT<>(splay_tree,50, 100, 75, "RNG/splay_treeNEW/F-R-AVL-SPLAY.csv");
+        testerRNGINT_splay_treeF.analyze();
+
+        RemoveTesterRNGINT<Integer,splay_tree<Integer,Integer>> testerRNGINT_splay_treeR = new RemoveTesterRNGINT<>(splay_tree,50, 100, 75, "RNG/splay_treeNEW/R-R-SPLAY-INT.csv");
+        testerRNGINT_splay_treeR.analyze();*/
         /*FindTesterLinearINT<Integer,splay_tree<Integer,Integer>> testerLinearINT_splay_treeF = new FindTesterLinearINT<>(splay_tree,50, 100, 750, "Linear/splay_tree/F-L-SPLAY-INT.csv");
         testerLinearINT_splay_treeF.analyze();
 
@@ -123,7 +127,7 @@ public class Main {
 
         //TreeMap
 
-        treeMap<Integer,Integer> map_tree = new treeMap<>();
+        /*treeMap<Integer,Integer> map_tree = new treeMap<>();
         InsertTesterLinearINT<Integer,treeMap<Integer,Integer>> testerLinearINT_splay = new InsertTesterLinearINT<>(map_tree,50, 100, 750, "Linear/MAP/I-L-MAP-INT.csv");
         testerLinearINT_splay.analyze();
 
@@ -159,6 +163,19 @@ public class Main {
         testerLinearString_splay_treeR.analyze();
 
         RemoveTesterRNGString<String,treeMap<String,Integer>> testerRNGString_splay_treeR = new RemoveTesterRNGString<>(map_treeS,50, 100, 750, "RNG/MAP/R-R-MAP-String.csv");
-        testerRNGString_splay_treeR.analyze();
+        testerRNGString_splay_treeR.analyze();*/
+
+        //AVL
+        /*avl_tree<Integer,Integer> map_tree = new avl_tree<>();
+
+        InsertTesterRNGINT<Integer, avl_tree<Integer,Integer>> testerRNGINT_splay = new InsertTesterRNGINT<>(map_tree,50, 100, 75, "RNG/AVL_MAP/I-R-AVL-INT.csv");
+        testerRNGINT_splay.analyze();
+
+        FindTesterRNGINT<Integer, avl_tree<Integer,Integer>> testerRNGINT_splay_treeF = new FindTesterRNGINT<>(map_tree,50, 100, 75, "RNG/AVL_MAP/F-R-AVL-MAP.csv");
+        testerRNGINT_splay_treeF.analyze();
+
+        RemoveTesterRNGINT<Integer, avl_tree<Integer,Integer>> testerRNGINT_splay_treeR = new RemoveTesterRNGINT<>(map_tree,50, 100, 75, "RNG/AVL_MAP/R-R-AVL-INT.csv");
+        testerRNGINT_splay_treeR.analyze();*/
+
     }
 }

@@ -24,6 +24,5 @@
       </library>
     </orderEntry>
     <orderEntry type="library" name="Maven: it.unimi.dsi:fastutil:8.5.12" level="project" />
-    <orderEntry type="library" name="Maven: com.karan.javadatastructures:splaytree:1.0-SNAPSHOT" level="project" />
   </component>
 </module>

@@ -114,7 +114,8 @@ abstract class TreeAnalyzer<TreeType,Key> extends TreeTester<TreeType> {
                     }
                     System.out.println(i);
                     double meanTime = replicationsDuration / divider;
-                    double timePerOperation = meanTime / (double) (getStepSize() * getCurrentStep());
+                    double currentElements = getStepSize() * getCurrentStep();
+                    double timePerOperation = meanTime / currentElements;
                     writer.write(getCurrentStep() * getStepSize() + ";" + meanTime/1000 + ";" + timePerOperation/1000 + "\n");
                     setCurrentStep(getCurrentStep() + 1);
                 }
